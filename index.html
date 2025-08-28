@@ -1,59 +1,142 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sol de Justicia</title>
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="icon" href="./media/logo.ico" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Título que aparece en la pestaña -->
+  <title>Ministerio Sol de Justicia</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="logo.ico">
+  
+  <!-- Descripción para buscadores -->
+  <meta name="description" content="Ministerio Sol de Justicia - Iglesia Misión Evangélica Sol de Justicia es un faro de esperanza y fe en Florencio Varela, Buenos Aires. Nacida para predicar el evangelio y servir a la comunidad, continúa llevando un mensaje de amor y compromiso con los más necesitados.">
+  
+  <!-- Palabras clave -->
+  <meta name="keywords" content="iglesia, ministerio, cristiano, oración, fe, biblia, Jesús, Sol de Justicia">
+  
+  <!-- Autor -->
+  <meta name="author" content="Ministerio Sol de Justicia">
+  
+  <!-- Open Graph (para que se vea bien al compartir en redes sociales) -->
+  <meta property="og:title" content="Ministerio Sol de Justicia">
+  <meta property="og:description" content="Iglesia Misión Evangélica Sol de Justicia es un faro de esperanza y fe en Florencio Varela, Buenos Aires. Nacida para predicar el evangelio y servir a la comunidad, continúa llevando un mensaje de amor y compromiso con los más necesitados.">
+  <meta property="og:image" content="https://i.ytimg.com/vi/D74rF3aaEiI/mqdefault.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.ministeriosoldejusticia.com.ar">
+</head>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="header">
-        <nav class="navbar">
-            <h1 class="logo">SOL DE JUSTICIA</h1>
+  <section class="hero">
+    <div class="hero-texto">
+      <h1>Sol de Justicia</h1>
+      <p>Más de Cuatro Décadas de Fe</p>
+    </div>
 
-            <label class="labe_hamburguesa" for="menu_hamburguesa">
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="35"
-                    height="35"
-                    fill="currentColor"
-                    class="list_icon"
-                    viewBox="0 0 16 16"
-                >
-                    <path
-                        fill-rule="evenodd"
-                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
-                    />
-                </svg>
-            </label>
+    <div class="hero-imagenes">
+      <img src="1.jpg" alt="Reunión 1">
+      <img src="2.jpg" alt="Reunión 2">
+      <img src="3.jpg" alt="Reunión 3">
+      <img src="4.jpg" alt="Reunión 4">
+      <img src="5.jpg" alt="Reunión 5">
+      <img src="6.jpg" alt="Reunión 6">
+    </div>
+  </section>
 
-            <input class="menu_hamburguesa" type="checkbox" name="" id="menu_hamburguesa">
+    <h1 class="titulo">Transmisión Online</h1>
+  <div class="video-container">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8J5ppd05yA8?si=NbEYZWYJJ8IUsL65" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+<div class="info-container">
+<!-- Cuadro Transmisión Online -->
+<div class="info-box">
+  <h3>Transmisión Online</h3>
+  <p><strong>Horarios</strong> 11:11 AM (Argentina)</p>
+  <p>México: 08:11 AM</p>
+  <p>Estados Unidos: 09:11 AM</p>
+  <p>España: 16:11 PM</p>
+  <p>Estados Unidos (Miami/NY): 10:11 AM</p>
+  <p>Colombia: 09:11 AM</p>
+</div>
 
-            <ul class="ul_links">
-                <li class="li_links"><a href="#" class="link">Inicio</a></li>
-                <li class="li_links"><a href="./pages/historia.html" class="link">Historia</a></li>
-                <li class="li_links"><a href="./pages/ministerios.html" class="link">Ministerios</a></li>
-                <li class="li_links"><a href="./pages/multimedia.html" class="link">Multimedia</a></li>
-                <li class="li_links"><a href="./pages/radiosoldejusticia.html" class="link">Radio</a></li>
-                <li class="li_links"><a href="./pages/contacto.html" class="link">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section class="hero">
-        <div class="text">
-            <h1>¡Bienvenido!</h1>
-            <p>Los esperamos en nuestras transmisiones.</p>
-            <a href="#"><button class="en-vivo">EN VIVO</button></a>
-        </div>
-        <div class="images">
-            <img src="./media/evento.jpg" alt="Evento 1">
-            <img src="./media/evento2.jpg" alt="Evento 2">
-            <img src="./media/3.jpg" alt="Evento 3">
-        </div>
-    </section>
-    <footer>
-        <p>&copy; 2025 Sol de Justicia. Todos los derechos reservados.</p>
-    </footer>
+<!-- Nuevo Cuadro Pedidos de Oración -->
+<div class="info-box">
+  <h3>Pedidos de Oración</h3>
+  <p>¿Tenés un pedido de oración?<br>
+  Si tenés un pedido de oración, estaremos intercediendo por vos.</p>
+  <!-- Botón WhatsApp -->
+  <a href="https://wa.me/541166627585" 
+     target="_blank" class="btn-wsp">
+    Oren por mi necesidad
+  </a>
+</div>
+
+<!-- Cuadro Reuniones y Vallado -->
+<div class="info-box">
+  <h3>Reuniones Presenciales</h3>
+  <p><strong>Domingos</strong> - 11:00 AM</p>
+  <p>552 Gobernador Julio Acosta 883, Florencio Varela</p>
+  <p>Buenos Aires - Argentina</p>
+  
+  <hr>
+
+  <h3>Vallado de Oración</h3>
+  <p><strong>Lunes a Viernes</strong> - 21:00 a 22:00 PM</p>
+  <p><a href="tel:1166627585"> +54 9 11 6662-7585</a></p>
+  <p><a href="mailto: ministeriosoldejusticiavl@gmail.com">✉  ministeriosoldejusticiavl@gmail.com</a></p>
+</div>
+
+
+</div>
+
+  <div class="links">
+    <a href="https://www.youtube.com/@soldejusticiatv" target="_blank">CANAL</a>
+    <a href="https://radiosoldejusticia.com.ar/index.html" target="_blank">RADIO</a>
+  </div>
+
+  <footer class="footer">
+  <div class="container">
+    
+    <!-- SOBRE NOSOTROS -->
+    <div class="footer-section">
+      <h3>Sobre Nosotros</h3>
+      <p>Desde 1983, la Iglesia Misión Evangélica Sol de Justicia es un faro de esperanza y fe en Florencio Varela, Buenos Aires. Nacida para predicar el evangelio y servir a la comunidad, continúa llevando un mensaje de amor y compromiso con los más necesitados.</p>
+    </div>
+
+    <!-- CONTACTO -->
+    <div class="footer-section">
+      <h3>Contacto</h3>
+      <p><i class="fas fa-map-marker-alt"></i>552 Gobernador J. Acosta 883, Florencio Varela, Buenos Aires, Argentina</p>
+      <p><i class="fas fa-phone"></i> +54 11 66627585</p>
+      <p><i class="fas fa-clock"></i> Lunes a Domingos: las 24 horas</p>
+    </div>
+
+    <!-- UBICACIÓN -->
+    <div class="footer-section">
+      <h3>Ubicación</h3>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d631.4583089894711!2d-58.29912399113529!3d-34.81598933399077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32bc3c70e43b7%3A0xa7090cd78575a565!2sC.%20552%2C%20B1859%20Gdor.%20Costa%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1756397951706!5m2!1ses-419!2sar" width="250" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <!-- OFRENDAR -->
+    <div class="footer-section">
+      <h3>Ofrendar</h3>
+      <p>Gracias por tu deseo de contribuir con la misión que Dios nos encomendó como Iglesia.</p>
+      <a href="https://link.mercadopago.com.ar/iglesiasoldejusticia" target="_blank" class="btn-ofrenda">Ofrendar Ahora</a>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 Ministerio Sol de Justicia. Todos los derechos reservados.</p>
+  </div>
+
+  <!-- BOTÓN WHATSAPP -->
+  <a href="https://wa.me/541166627585" target="_blank" class="whatsapp-float">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+  </a>
+</footer>
+
 </body>
 </html>
