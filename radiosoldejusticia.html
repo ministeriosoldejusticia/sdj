@@ -1,1 +1,80 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Sol de Justicia</title>
+
+  <link rel="icon" href="https://ministeriosoldejusticia.com.ar/logo.ico">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #111;
+      font-family: Arial, sans-serif;
+    }
+
+    .radio {
+      width: 320px;
+      padding: 20px;
+      text-align: center;
+      background: #181818;
+      border-radius: 14px;
+    }
+
+    .logo {
+      width: 90px;
+      height: 90px;
+      object-fit: contain;
+      margin-bottom: 15px;
+    }
+
+    audio {
+      width: 100%;
+      height: 40px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="radio">
+
+    <img
+      class="logo"
+      src="https://ministeriosoldejusticia.com.ar/logo.ico"
+      alt="Sol de Justicia"
+    >
+
+    <audio id="radio" controls autoplay>
+      <source
+        src="https://stream-176.zeno.fm/y9teefnmlxpuv"
+        type="audio/mpeg"
+      >
+      Tu navegador no soporta el audio en línea.
+    </audio>
+
+  </div>
+
+  <script>
+    const radio = document.getElementById("radio");
+
+    radio.play().catch(() => {
+      // El navegador puede bloquear el autoplay.
+    });
+  </script>
+
+</body>
+</html>
+```
 
