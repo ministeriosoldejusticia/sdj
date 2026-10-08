@@ -18,7 +18,7 @@
     body {
       min-height: 100vh;
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       justify-content: center;
 
       /* Fondo blanco y negro */
@@ -27,7 +27,7 @@
 
       color: #fff;
       font-family: Arial, Helvetica, sans-serif;
-      padding: 25px;
+      padding: 50px 25px;
     }
 
     .contenedor {
@@ -87,6 +87,7 @@
       width: 100%;
       display: flex;
       justify-content: center;
+      margin-bottom: 55px;
     }
 
     .radio iframe {
@@ -98,19 +99,69 @@
       box-shadow: 0 20px 60px rgba(0, 0, 0, 0.65);
     }
 
+    /* LIBRO DE VISITAS */
+    .libro-visitas {
+      width: 100%;
+      max-width: 760px;
+      margin: 0 auto 55px;
+      text-align: center;
+    }
+
+    .libro-titulo {
+      margin-bottom: 25px;
+    }
+
+    .libro-titulo h2 {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .libro-titulo p {
+      color: #aaa;
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    #JFWebsiteWidget-01a11c62dab87000819efff76f9bb10a310c {
+      width: 100%;
+    }
+
+    /* FRASE */
     .pie {
-      margin-top: 35px;
+      margin-top: 20px;
+      margin-bottom: 25px;
       color: #777;
       font-size: 12px;
       letter-spacing: 3px;
       text-transform: uppercase;
     }
 
+    /* COPYRIGHT */
+    .copyright {
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      padding-top: 25px;
+      margin-top: 30px;
+      color: #777;
+      font-size: 13px;
+      line-height: 1.6;
+    }
+
+    .copyright strong {
+      color: #aaa;
+      font-weight: 500;
+    }
+
+    .copyright .nombre {
+      color: #f1c40f;
+      font-weight: 600;
+    }
+
     /* MÓVILES */
     @media (max-width: 600px) {
 
       body {
-        padding: 18px;
+        padding: 35px 18px;
       }
 
       .marca {
@@ -136,12 +187,32 @@
         line-height: 1.6;
       }
 
+      .radio {
+        margin-bottom: 45px;
+      }
+
       .radio iframe {
         height: 260px;
       }
 
+      .libro-visitas {
+        margin-bottom: 45px;
+      }
+
+      .libro-titulo h2 {
+        font-size: 24px;
+      }
+
+      .libro-titulo p {
+        font-size: 14px;
+      }
+
       .pie {
         letter-spacing: 2px;
+      }
+
+      .copyright {
+        font-size: 12px;
       }
     }
   </style>
@@ -151,22 +222,26 @@
 
   <main class="contenedor">
 
+    <!-- MARCA -->
     <div class="marca">
       <div class="sol"></div>
       <span>Sol de Justicia</span>
     </div>
 
+    <!-- TÍTULO -->
     <h1>
       Ministerio<br>
       <span class="amarillo">Sol de Justicia</span>
     </h1>
 
+    <!-- MENSAJE -->
     <p class="mensaje">
       Nuestro sitio web se encuentra en construcción.
       Estamos preparando un nuevo espacio para continuar
       llevando el mensaje de Jesucristo a las naciones.
     </p>
 
+    <!-- REPRODUCTOR DE RADIO -->
     <div class="radio">
 
       <iframe
@@ -177,9 +252,40 @@
 
     </div>
 
+    <!-- LIBRO DE VISITAS -->
+    <section class="libro-visitas">
+
+      <div class="libro-titulo">
+        <h2>Libro de visitas</h2>
+
+        <p>
+          Déjanos un mensaje, un saludo o unas palabras.
+          Será una alegría recibir tu visita.
+        </p>
+      </div>
+
+      <!-- JOTFORM -->
+      <div id="JFWebsiteWidget-01a11c62dab87000819efff76f9bb10a310c"></div>
+
+      <script
+        src="https://www.jotform.com/website-widgets/embed/01a11c62dab87000819efff76f9bb10a310c"
+        defer>
+      </script>
+
+    </section>
+
+    <!-- FRASE -->
     <div class="pie">
       A las naciones
     </div>
+
+    <!-- COPYRIGHT -->
+    <footer class="copyright">
+      <strong>Diseñada por</strong>
+      <span class="nombre">Jonathan Oroño</span>
+      <br>
+      Copyright © 2026 - Sol de Justicia.
+    </footer>
 
   </main>
 
